@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li{
+  display: inline;
+  margin-left: 50px;
+ 
+}
+.items img{
+  width:200px;
+}
+ul{
+  float: right;
+  margin-top: -24px;
+}
+/*ul img{
+  display:none;
+}*/
+.bars{
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  ul li{
+    display: none;
+  }
+  .mobile-list ul li{
+    display: block !important;
+  }
+ /*ul img{
+   display: block;
+   margin-top: -20px;
+ }*/
+ .bars{
+   display: block;
+   /*margin-top: -20px;*/
+   float: right;
+   margin-top: -50px;
+   background: transparent;
+   border-color: rgb(0,0,0);
+ }
+}
+@media only screen and (max-width: 450px) {
+.bodycontent{
+  padding-top:50% !important;
+}
+}
+nav a:link {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a :hover {
+  color: #fff;
+  border-bottom: #fff;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.pic img{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 100px;
+  margin-top: 30px;
+  width:150px;
+  height:150px; 
+  border-radius:50%;
+  float: left;
+
+}
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+.container{
+  margin-top: 85px;
+}
+.banner{
+  background-image: url('../assets/nextopia.webp');
+}
+.drone{
+  background-image: url('../assets/drone.jpg');
+  background-size: cover;
+}
+div .banner:hover
+{
+max-height: 250px;
+}
+.title{
+  font-weight: 900;
+  font-size: 50px;
+  color: black;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+pad{
+  padding-top: 100px;
+}
+
+.subtitle{
+  font-weight: 500;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 20px;
+}
+.white{
+  color:white;
+}
+.surround{
+  border: 7px solid white;
+  /*width: 30%;*/
+}
+.jobdesc{
+  margin-bottom: 0px;
+}
+.experience{
+  background-color: white;
+}
+.skills{
+  background-color: #302c2e
+}
+.center{
+  text-align: center;
+}
+.parent{
+  background-image: url('../assets/forest.jpg');
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.wrapper{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  width: 50%;
+}
+h2, h3, h4, h5, h6{
+  margin: 0 auto;
+}
+.bodycontent{
+  padding-top: 20%;
+}
+.profile-pic{
+  background-image: url('../assets/nik.jpg');
+  background-size: cover;
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.black-overlay{
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: 0;
+  background: radial-gradient(ellipse at center,transparent 0,rgba(0,0,0,.8) 100%);
+}
+.full{
+  width: 100%;
+  height: 100%;
+}
+.portfolio-pic{
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item{
+  max-width:50%;
+  max-height:50%;
+}
+.item img{
+  width:250px;
+}
+.content h5{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grey{
+  background-color: #302c2e;
+}
+.white-back{
+  background-color: white;
+}
+.left{
+float: left;
+}
+.right{
+  float: right;
+}
+.item a{
+  color:red;
+}
+
+footer{
+text-align: center;
+color:white;
+background-color: black;
+}
+footer img{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+footer p{
+  text-align: center;
+  margin: 0 auto;
+}
+.socket{
+  display: inline-block;
+  width: 75%;
+  text-align: left;
+}
+.image-container{
+  height: 300px;
+}
+.unavailable{
+  color:lightgrey !important;
+}
+/******** MONSTER ********/
+
+.contain, .monster, .eyes, .iris, .mouth, .face, .text {
+  position: absolute;
+}
+.contain {
+  margin-left: 10px;
+  margin-top: 35px;
+  width: 200px;
+  height: 100px;
+}
+.face {
+  left: -3px;
+  transition: all 0.5s ease;
+}
+.monster {
+  width: 150px;
+  height: 150px;
+  background: #f45b69;
+  border-radius: 100%;
+}
+.monster:before, .monster:after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 30px;
+  background: #f45b69;
+}
+.monster:before {
+  left: 20px;
+  border-radius: 100% 0 0 0;
+}
+.monster:after {
+  left: 110px;
+  border-radius: 0 100% 0 0;
+}
+.hair {
+  position: absolute;
+  top: -2px;
+  left: 67px;
+  width: 10px;
+  height: 10px;
+  background: #f45b69;
+  border-radius: 100% 0 100% 100%;
+  transform: rotate(-20deg);
+}
+.hair:before {
+  position: absolute;
+  content: '';
+  top: 3px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  background: #f45b69;
+  border-radius: 100% 0 100% 100%;
+}
+.eyes {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  top: 50px;
+  left: 30px;
+  border-radius: 100%;
+}
+.eyes:before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  left: 70px;
+  border-radius: 100%;
+}
+.iris {
+  width: 20px;
+  height: 20px;
+  background: #59c3c3;
+  border-radius: 100%;
+  top: 5px;
+  left: 7px;
+}
+.iris:before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #59c3c3;
+  border-radius: 100%;
+  left: 66px;
+}
+.mouth {
+  overflow: hidden;
+  top: 90px;
+  left: 50px;
+  width: 60px;
+  height: 3px;
+  background: #603335;
+  /* box-shadow: inset -4px 20px 0 #8A3033;*/
+  border-radius: 0 0 100px 100px;
+  transition: all 0.5s ease;
+}
+.mouth:before {
+  position: absolute;
+  left: 17px;
+  top: 15px;
+  content: '';
+  width: 50px;
+  height: 30px;
+  background: #f6828c;
+  border-radius: 100%;
+}
+.teeth {
+  position: relative;
+  top: 90px;
+  left: 60px;
+}
+.teeth div:nth-child(1) {
+  position: absolute;
+  width: 7px;
+  height: 10px;
+  background: #fff;
+  border-radius: 0 0 0 100%;
+}
+.teeth div:nth-child(2) {
+  position: absolute;
+  left: 30px;
+  width: 7px;
+  height: 10px;
+  background: #fff;
+  border-radius: 0 0 100% 0;
+}
+.monster:hover ~ .mouth {
+  height: 30px;
+}
+.monster:hover ~ .drool {
+  transform: translate(3px, 20px);
+}
+.drool {
+  position: absolute;
+  top: 90px;
+  left: 53px;
+  width: 4px;
+  height: 25px;
+  background: #c5dfea;
+  border-radius: 100px;
+  transition: all 0.2s ease;
+  animation: 5s drip infinite ease;
+}
+.drool:before {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: #c5dfea;
+  top: 30px;
+  left: -1px;
+  border-radius: 0 100% 100% 100%;
+  transform: rotate(40deg);
+  animation: 2s droplet infinite ease;
+}
+.text {
+  background: #bbd5e0;
+  border-radius: 100%;
+  height: 20px;
+  width: 130px;
+  top: 158px;
+  left: 16px;
+  font-family: sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  box-shadow: 3px 1px 2px #a2b7c0;
+}
+@keyframes drip {
+  100% {
+    height: 40px;
+  }
+}
+@keyframes droplet {
+  100% {
+    transform: translateY(33px);
+  }
+}
+
+
+@media only screen and (max-width: 379px) {
+
+.black-overlay{
+  top: 20px;
+}
+.wrapper{
+  left: 20%;
+  right: 20%;
+  width: 60%;
+}
+.title{
+  font-size: 30px;
+}
+.socket{
+  margin-top: 200px;
+}
+
+.contain{
+  margin-left: 100px;
+}
+
+footer img{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.left{
+  float:none;
+}
+.right{
+  float:none;
+}
+.item{
+  max-width: none;
+  max-height: none;
+}
+.subtitle{
+  font-size: 15px;
+}
+}
