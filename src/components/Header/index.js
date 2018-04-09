@@ -7,14 +7,17 @@ import bars from '/Users/nikolasspendik/Documents/Gatsby/gatsby-site/src/compone
 function more(){
   var b = document.querySelector("button");
   var list = document.querySelector("ul");
-  //l.setAttribute("style", "display: block !important;");
+  var mobilelist = document.querySelector(".mobile-nav");
+  
 
+  if (mobilelist.style.display == "none")
+  {
+      mobilelist.style.display = "block";
+  }
 
-  if (list.style.display == "none"){
-    list.style.display = "block";
-}else{
-    list.style.display = "none";
-}
+    else{
+        mobilelist.style.display = "none";
+    }
 }
 function scrollme(){
   document.body.scrollIntoView(false,{ behavior: 'smooth' });
@@ -57,7 +60,19 @@ const Header = () => (
             </ul>
       
   </nav>
+  
     </div>
+
+    <div className="mobile-nav">
+      <nav>
+          <ul style={{ listStyleType: "none"}}>
+          <Link to="/page-2/"><li>ABOUT</li> </Link>
+          <Link to="/page-3/"><li>PORTFOLIO</li></Link>
+          <a href="#"><li>RESUME / CV</li> </a>     
+                </ul>
+          
+      </nav>
+  </div>
   </div>
 
 
