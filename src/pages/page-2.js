@@ -19,6 +19,7 @@ import mysql from '../assets/devicon-master/icons/mysql/mysql-original-wordmark.
 import nextopia from '../assets/nextopia.webp'
 import separator from '../assets/separator.png'
 import nik from '../assets/nik.jpg'
+import toronto from '../assets/toronto.jpg'
 
 
 const SecondPage = () => (
