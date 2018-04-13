@@ -33,8 +33,9 @@ const SecondPage = () => (
       </div>
       <div className="black-overlay full"></div>
       </div>
-       
+      
       <div className="pic">
+      {/* 
       <div className="contain">
   <div className="monster"></div>
   <div className="hair"></div>
@@ -51,7 +52,8 @@ const SecondPage = () => (
   </div>
   <div className="text"></div>
 </div>
-          {/*<img src="https://images.urbanoutfitters.com/is/image/UrbanOutfitters/39653142_001_s"/>*/}
+      */}
+          <img src={nik}/>
           </div>
           <div className="socket">
       <h2 className="pad title">About Me</h2>
