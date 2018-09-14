@@ -5,6 +5,7 @@ import Link from 'gatsby-link'
 import drone from '../assets/drone-layout.png'
 import eatxpress from '../assets/eatxpress-layout.png'
 import mac from '../assets/mac-vector.png'
+import fn from '../assets/fn2.png'
 
 
 
@@ -47,7 +48,7 @@ const ThirdPage = () => (
         <h3 className="title white">Fortnite Stat Tracker</h3>        
         <div className="image-container">       
         <img src={mac}/>
-        <h4 className="title white">In Development</h4> 
+        <h4 className="title white">In Development</h4>
         </div>
         <h5 className="subtitle white">A web application that shows your stats in the game - Fortnite. This application uses the <a href="https://fortnitetracker.com/">Fortnite Tracker</a> api to get the required data. 
         </h5>
