@@ -10,6 +10,7 @@ function more(){
   var list = document.querySelector("ul");
   var mobilelist = document.querySelector(".mobile-nav");
   
+  
 
 
   if (mobilelist.style.display == "none")
