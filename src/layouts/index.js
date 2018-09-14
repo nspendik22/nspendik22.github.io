@@ -35,10 +35,10 @@ const TemplateWrapper = ({ children }) => (
     >
       {children()}
     </div>
-    <footer>
+    {/*<footer>
     <a href="mailto:nspendik@gmail.com"><img src={mail}/></a><a href="https://github.com/nspendik22/"><img src={git}/></a><a href="https://www.linkedin.com/in/nspendik/"><img src={linkedin}/></a>
     <p>© 2018 Nikolas Spendik</p>
-    </footer>
+    </footer>*/}
   </div>
 )
 

@@ -20,26 +20,49 @@ li{
 }
 ul{
   float: right;
-  margin-top: -24px;
+  /*margin-top: -24px;*/
 }
-/*ul img{
-  display:none;
-}*/
+
 .bars{
   display: none;
 }
 .mobile-nav{
   display: none;
 }
+.header-logo{
+  height: 100px;
+}
+.logo-wrapper{
+  width: 10%;
+  float: left;
+  margin-top: -15px;
+}
+.header-wrapper{
+  width: 90%;
+    float: right;
+    margin-top: 10px;
+}
+.header-wrapper h1 a{display:none;}
+
+.home-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 25%;
+}
+@media only screen and (max-width: 480px) { .home-info{margin-top:50%;} }
+.bodycontent div:nth-child(1){
+  height:100vh;
+}
 
 
 
-
-@media only screen and (max-width: 450px) {
+/*@media only screen and (max-width: 450px) {
 .bodycontent{
   padding-top:50% !important;
 }
-}
+}*/
 nav a:link {
   color: #fff;
   text-decoration: none;
@@ -199,7 +222,8 @@ pad{
   text-align: center;
 }
 .parent{
-  background-image: url('../assets/forest.jpg');
+  /*background-image: url('../assets/to-cover.jpg');*/
+  background: rgb(54, 75, 131);
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -215,9 +239,9 @@ pad{
 h2, h3, h4, h5, h6{
   margin: 0 auto;
 }
-.bodycontent{
+/*.bodycontent{
   padding-top: 20%;
-}
+}*/
 .profile-pic{
   background-image: url('../assets/toronto.jpg');
   background-size: cover;
@@ -304,6 +328,9 @@ footer p{
     display: none;
 
   }
+  .mobile-nav{
+    margin-top: 75px;
+  }
   .mobile-nav ul li{
     display: block !important;
     padding-top: 10px;
@@ -321,15 +348,11 @@ footer p{
   .mobile-nav nav{
     width:100%;
   }
- /*ul img{
-   display: block;
-   margin-top: -20px;
- }*/
+
  .bars{
    display: block;
-   /*margin-top: -20px;*/
    float: right;
-   margin-top: -35px;
+   margin: 0 auto;
    background: transparent;
    border-color: rgb(0,0,0);
  }
